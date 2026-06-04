@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.align-items-center{
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.scrolled .header {
+    --background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header{
+    position: fixed;
+    padding: 15px 0;
+    list-style: none;
+    align-items: center;
+    z-index: 1;
+    background-color: color-mix(in srgb, black, transparent 40%); 
+    transition: .4s ease-in-out;
+    
+}
+.scrolled .Ace-container {
+    --background-color: rgba(0, 0, 0, 0.8);
+}
+.Ace-container-fluid{
+    text-align: start;
+    padding: 20px 0px;
+    position: relative;
+    background-color: transparent;    
+    justify-content: space-around;
+}
+
+.Ace-title h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px 20px;
+}
+.navbar ul{
+    display: flex;
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+.navbar ul li{
+    padding: 15px 15px;
+    
+}
+
+.navbar ul li a{
+    font-size: 15px;
+    padding: 0 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li a.auto{
+    color: rgb(4, 161, 4);
+}
+.navbar ul li a:hover
+{
+    color: rgb(4, 161, 4);
+}
+.navbar ul li a::before{
+    content: "";
+    height: 0px;
+    width: 0;
+    bottom: -6px;
+    background-color: rgb(4, 161, 4);
+    position: absolute;
+}
+.navbar ul li a:hover::before{
+    transition: .4s ease-in-out;
+    color:rgb(4, 161, 4);
+    height: 2px;
+    width: 25px;
+    bottom: -6px;
+}
+
+.hero-section{
+    width: 100%;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  
+    overflow: visible;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hero-section .container-fluid h2{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 90px;
+}
+.hero-section .container-fluid span{
+    color: white;
+    font-size: 30px;
+    padding-left: 90px;
+}
+.hero-section .container-fluid .socials{
+    margin-top: 25px;
+    padding-left: 90px;
+}
+.hero-section .container-fluid .socials a{
+    color: white;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 20px;
+    height: 42px;
+    width: 40px;
+    background-color: color-mix(in srgb, white, transparent 90%);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    padding-top: 10px;
+    transition: .3s;
+}
+.hero-section .container-fluid .socials a:hover{
+    background-color: rgb(4, 161, 4);
+}
+.hero-image{
+    margin-top: 150px;
+    position: relative;
+    
+}
+.hero-image img{
+    position: absolute;
+    background-size: cover;
+    width: 550px;
+    height: 490px;
+}
+
+@media (max-width:1240px) {
+    .header{
+        width: 1240px;
+    }
+}
+@media (max-width:992px) {
+    .hero-section .container-fluid h2{
+        font-size: 50px;
+        
+    }
+    .Ace-container{
+        justify-content:flex-start;
+    }
+}
+@media (max-width:1110px) {
+    .hero-image img{
+        display: none;
+    }
+    
+    main{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo6zoo08cmV6Ywo8IeKOTxa0BXjHAOcMHtCw&s");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        width: 100%;
+    }   
+}
+@media (max-width:854px){
+    .hero-image img{
+        display: none;
+    }
+    main{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo6zoo08cmV6Ywo8IeKOTxa0BXjHAOcMHtCw&s");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+}
+@media (max-width:412px){
+    .Ace-container-fluid{
+        justify-content: space-evenly !important;
+    }
+}

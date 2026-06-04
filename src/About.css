@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.align-items-center{
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.scrolled .header {
+    --background-color: rgba(0, 0, 0, 0.8);
+}
+.header{
+    position: fixed;
+    padding: 15px 0;
+    list-style: none;
+    align-items: center;
+    z-index: 1;
+    background-color: color-mix(in srgb, black, transparent 40%); 
+    transition: .4s ease-in-out;
+
+}
+.scrolled .About-container {
+    --background-color: rgba(0, 0, 0, 0.8);
+}
+.About-container{
+    text-align: start;
+    padding: 20px 0px;
+    position: relative;
+    background-color: transparent;    
+}
+
+.About-title h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px 20px;
+}
+.navbar ul{
+    display: flex;
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+.navbar ul li{
+    padding: 15px 15px;
+    
+}
+
+.navbar ul li a{
+    font-size: 15px;
+    padding: 0 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li a.auto{
+    color: rgb(4, 161, 4);
+}
+.navbar ul li a:hover
+{
+    color: rgb(4, 161, 4);
+}
+.navbar ul li a::before{
+    content: "";
+    height: 0px;
+    width: 0;
+    bottom: -6px;
+    background-color: rgb(4, 161, 4);
+    position: absolute;
+}
+.navbar ul li a:hover::before{
+    transition: .4s ease-in-out;
+    color:rgb(4, 161, 4);
+    height: 2px;
+    width: 25px;
+    bottom: -6px;
+}
+main{
+    background-color: black;
+}
+.About-title .About-me{
+    padding-bottom: 80px;
+    padding-top: 160px;
+    border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+    align-items: center;
+    padding-left: 300px;
+    min-height: 100px;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.About-title .About-me h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.About-title .About-me p{
+    color: white;
+    font-size: 15px;
+    
+}
+.About-title nav{
+    padding: 20px 0;
+        background-color: color-mix(in srgb, white, transparent 90%);
+ display: flex;
+}
+.About-title nav ol{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.About-title nav ol li a{
+    color: rgb(4, 161, 4);
+    text-decoration: none;
+    
+}
+nav ol li.default{
+    color: white;
+    padding-left: 20px;
+    position: relative;
+}
+nav ol li.default::before{
+    position: absolute;
+    content: "/";
+    background-color: 
+ color-mix(in srgb, var(--default-color), transparent 90%);
+    display: inline-block;
+    left: 7px;
+}
+.Details-section{
+    color: white;
+    background-color: black;
+    padding: 100px 0px;
+    scroll-margin-top: 66px;
+    font-family: sans-serif;
+}
+.Details-section h2{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 60px;
+    padding-left: 90px;
+}
+.Details-section p{
+    font-size: 18px;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 90px;
+}
+.Details-section ul{
+    margin-top: 30px;
+    padding-left: 80px;
+}
+.Details-section ul li{
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+.Details-section ul li span{
+    padding-left: 10px;
+}
+.Details-section ul li big{
+    padding-right: 5px;
+    color: rgb(4, 161, 4);
+}
+.Skills-section{
+    padding-bottom: 100px;
+}
+.Skills-section h3{
+    color: grey;
+    font-size: medium;
+    
+    font-family:sans-serif;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+.Skills-section h3::before{
+    position: absolute;
+    content: "";
+    background-color: rgb(4, 161, 4);
+    height: 2px;
+    width: 120px;
+    left: 70px;
+    bottom: 10px;
+}
+.Skills-section h4{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    
+}
+.Skills-section .skills{
+    display: flex;
+    justify-content: space-between;
+   
+    margin-left: 80px;
+    color: white;
+    font-weight: 600;
+}
+.Skills-section .my-skills{
+    padding: 30px;
+    padding-left: 70px;
+}
+
+.Skills-section .progress-bar-wrap{
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 10px;
+    color: color-mix(in srgb, white, transparent 90%);
+    
+}
+.Skills-section .progress{
+    color: color-mix(in srgb, white, transparent 90%);
+    height: 10px;
+}
+.Skills-section .progress-bar-wrap .progress-bar{
+    background-color: rgb(4, 161, 4);
+      color: color-mix(in srgb, white, transparent 90%)
+}
+
+@media (max-width:1240px) {
+    .header{
+        width: 1240px;
+    }
+    main{
+        background-image: none;
+        width: 1390px;
+    }
+    footer{
+        width: 1240px;
+    }
+}
+@media (max-width:1024px) {
+    .About-title .About-me{
+        width: 950px;
+    }
+}
+@media (max-width:992px) {
+    .About-title .About-me{
+        width: 720px;
+        margin: 0;
+        padding-left: 90px;
+    }
+}
+@media (max-width:768px) {
+    .About-title .About-me{
+        width: 650px;
+        margin: 10px;
+        padding-left: 0;
+    }
+}
+@media (max-width:675px) {
+    .About-title .About-me{
+        width: 500px;
+        margin: 10px;
+        padding-left:30px;
+    }
+}

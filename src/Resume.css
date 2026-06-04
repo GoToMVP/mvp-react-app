@@ -1,0 +1,272 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.align-items-center{
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.header{
+    position: fixed;
+    padding: 15px 0;
+    list-style: none;
+    align-items: center;
+    z-index: 1;
+    background-color: color-mix(in srgb, black, transparent 40%); 
+    transition: .4s ease-in-out;
+}
+.scrolled .Resume-container {
+    --background-color: rgba(0, 0, 0, 0.8);
+}
+.Resume-container{
+    text-align: start;
+    padding: 20px 0px;
+    position: relative;
+    background-color: transparent;    
+}
+
+.Resume-title h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px 20px;
+}
+.navbar ul{
+    display: flex;
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+.navbar ul li{
+    padding: 15px 15px;
+    
+}
+
+.navbar ul li a{
+    font-size: 15px;
+    padding: 0 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li a.auto{
+    color: rgb(4, 161, 4);
+}
+.navbar ul li a:hover
+{
+    color: rgb(4, 161, 4);
+}
+.navbar ul li a::before{
+    content: "";
+    height: 0px;
+    width: 0;
+    bottom: -6px;
+    background-color: rgb(4, 161, 4);
+    position: absolute;
+}
+.navbar ul li a:hover::before{
+    transition: .4s ease-in-out;
+    color:rgb(4, 161, 4);
+    height: 2px;
+    width: 25px;
+    bottom: -6px;
+}
+
+main{
+    background-color: black;
+    width: 100%;
+    display: block;
+}
+.Resume-title .Resume-me{
+    padding: 160px 0 80px 0;
+    border-top: 1px solid
+ color-mix(in srgb, var(--default-color), transparent 90%);
+ align-items: center;
+ min-height: 100px;
+}
+.Resume-title .Resume-me .container-fluid{
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    padding-left: 200px;
+}
+.Resume-title .Resume-me h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    
+}
+.Resume-title .Resume-me p{
+    color: white;
+    font-size: 15px;
+    
+}
+.Resume-title nav{
+    padding: 20px 0;
+        background-color: color-mix(in srgb, white, transparent 90%);
+ display: flex;
+}
+.Resume-title nav ol{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 90px;
+}
+.Resume-title nav ol li a{
+    color: rgb(4, 161, 4);
+    text-decoration: none;
+    
+}
+nav ol li.default{
+    color: white;
+    padding-left: 20px;
+    position: relative;
+}
+nav ol li.default::before{
+    position: absolute;
+    content: "/";
+    background-color: 
+ color-mix(in srgb, var(--default-color), transparent 90%);
+    display: inline-block;
+    left: 7px;
+}
+.Resume-section{
+    color: white;
+    background-color: black;
+    padding-left: 90px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.Resume-section .Resume-Details h2{
+    color: white;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 700
+}
+.Resume-section .Resume-content{
+    padding: 0 0px 20px 20px;
+    border-left: 2px solid rgb(4, 161, 4);
+    position: relative;
+    margin-top: 20px;
+}
+.Resume-section .Resume-content::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    border:2px solid rgb(4, 161, 4);
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0px;
+}
+.Resume-section .Resume-content big{
+    text-transform: uppercase;
+    color:  color-mix(in srgb, white, transparent 20%);
+    font-weight: 600;
+    font-size: 23px;
+}
+.Resume-section .Resume-content p{
+    color: white;
+    font-style: italic;
+    margin-top: 5px;
+}
+.Resume-section .Resume-content ul{
+    color: white;
+    padding-left: 20px;
+}
+.Resume-section .Resume-content ul li{
+ padding-bottom: 10px;   
+}
+.Resume-section .Resume-content ul li big{
+    padding-right: 5px;
+}
+.Resume-section .Resume-content h6{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 10px;
+    font-feature-settings: "onum";
+}
+.Resume-section .Resume-content p{
+    font-style: italic;
+    margin-top: 15px;
+}
+footer{
+    color: white;
+    background-color: rgb(15 15 14 / 97%);
+    font-size: 14px;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+@media (max-width:1240px) {
+    .header{
+        width: 1240px;
+    }
+    main{
+        background-image: none;
+        width: 1390px;
+    }
+    footer{
+        width: 1390px;
+    }
+}
+@media (max-width:1024px) {
+    .Resume-title .Resume-me .container-fluid{
+        width: 1000px;
+        margin: 0;
+
+    }
+}
+@media (max-width:992px) {
+    .Resume-title .Resume-me .container-fluid{
+        width: 800px;
+        margin-left: 300px;
+        margin: 0;
+    }
+}
+@media (max-width:853px) {
+    .Resume-title .Resume-me .container-fluid{
+        width: 750px;
+        margin-left: 100px;
+    }
+}
+@media (max-width:768px) {
+    .Resume-title .Resume-me .container-fluid{
+        width: 700px;
+        margin-left: 100px;
+    }
+}
+@media (max-width:700px) {
+    .Resume-title .Resume-me .container-fluid{
+        width: 600px;
+        margin-left: 150px;
+    }
+}
+@media (max-width:576px) {
+    .Resume-title .Resume-me .container-fluid{
+        width: 450px;
+        margin-left: 250px;
+    }
+}

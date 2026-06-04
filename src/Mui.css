@@ -1,0 +1,24 @@
+.css-79zo2g-MuiButtonBase-root-MuiButton-root{
+    background-color: burlywood !important;
+    border-radius: 50px !important;
+}
+.css-79zo2g-MuiButtonBase-root-MuiButton-root:hover{
+    transition: .3s ease-in !important;
+    background-color:black !important;
+}
+.css-ptdwpq-MuiPaper-root-MuiAppBar-root{
+    background-color: rgba(19, 19, 19, 0.928) !important;
+}
+.css-1umw9bq-MuiSvgIcon-root {
+    color: white !important;
+}
+.css-cyqh1t-MuiPaper-root-MuiDrawer-paper{
+    background-color: black !important;
+    color: white !important;
+}
+.css-coyn9m-MuiButtonBase-root-MuiCardActionArea-root {
+    width: 390px !important;
+    height: 380px !important;
+    background-color: #fbf6f1 !important;
+
+}
